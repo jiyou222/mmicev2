@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楓之谷綿綿冰 社群入口</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .link-container {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+        <script>
+            function checkPassword() {
+                var password = prompt("密碼請去公會公布欄或找會長副會長取得，請輸入密碼:", "");
+                if (password !== "1117") {
+                    document.body.innerHTML = '<h1>密碼錯誤！</h1>';
+                    return false;
+                }
+                return true;
+            }
+        </script>
+</head>
+<body>
+    <body onload="checkPassword()">
+        <h1>楓之谷綿綿冰 社群入口</h1>
+        <div class="link-container">
+            <a href="https://line.mmice.cc" target="_blank">Line 群(密碼1124)</a>
+        </div>
+        <div class="link-container">
+            <a href="https://dc.mmice.cc" target="_blank">DC 群</a>
+        </div>
+</body>
+</html>
